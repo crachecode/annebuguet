@@ -8,46 +8,8 @@ id: bibliographie
 
 <div id="content" class="editorial">
 	<ul>
-		<li><em>Petite Lune</em><br />Claire Merleau-Ponty - Belin 2011</li>
-		<li><em>Dis c'est grand comment la Vie ?</em><br />Joël Sadler - Le Jasmin 2010</li>
-		<li><em>Contes pour les Petits Buveurs de Lait</em><br />Françoise Richard - Belin 2010</li>
-		<li><em>Le Jeune Homme et l'Etoile</em><br />Nadia Gypteau - Le Sorbier 2010</li>
-		<li><em>Comme Toi</em><br />Eve Bunting - Le Sorbier 2009</li>
-		<li><em>Yoga Maya</em><br />Serge Vallade - 2009</li>
-		<li><em>La Fille de Guillaume le Mal Peigné</em><br />Françoise Richard - Le Jasmin 2008</li>
-		<li><em>Fourminoël</em><br />Mireille Valant - Le Jasmin 2008</li>
-		<li><em>Comme une Pivoine</em><br />Christian Poslaniec - Le Jasmin 2008</li>
-		<li><em>Argos</em><br />Jean-Pierre Miglioli - Le Rocher 2007</li>
-		<li><em>Kanji</em><br />Lisa Bresner, Philippe Picquier - 2007</li>
-		<li><em>L'Enfant de la Pierre et l'Enfant des Castors</em><br />Françoise Richard - Le Rocher 2006</li>
-		<li><em>Les Ruses du Lièvre</em><br />Françoise Richard - Gulf Stream 2006</li>
-		<li><em>Amena ou La Légende du Vent Doux</em><br />Jean Siccardi - Le Rocher 2005</li>
-		<li><em>Le Gamin qui défia le Tigre</em><br />Robert Giraud - Père Castor Flammarion 2005</li>
-		<li><em>Les Petits Vers</em><br />Arnauld Pontier - Le Rocher 2005</li>
-		<li><em>Aladdin et la Lampe Merveilleuse</em><br />Anne Jonas - Milan 2004</li>
-		<li><em>La Belle au Bois Dormant</em><br />Tahar Ben Jelloun - Seuil 2004</li>
-		<li><em>Lo Fu</em><br />Jean-Pierre Miglioli - Lou Païs le Rocher 2003</li>
-		<li><em>Baba Yaga</em><br />Rose Celli - Flammarion 2003</li>
-		<li><em>Le Cheval de Rêve</em><br />Robert Giraud - Père Castor Flammarion 2003</li>
-		<li><em>L'enfant de la Banquise</em><br />Robert Giraud - Père Castor Flammarion 2002</li>
-		<li><em>La Tunique Rouge</em><br />Françoise Richard - Seuil 2002</li>
-		<li><em>le Grand Père qui faisait fleurir les Arbres</em><br />A. Fronsacq - Père Castor Flammarion 2002</li>
-		<li><em>Contes Traditionnels du Désert</em><br />André Voisin - Milan 2002</li>
-		<li><em>Macha et l'Ours</em><br />Robert Giraud - Père Castor Flammarion 2001</li>
-		<li><em>Les Noces du Soleil</em><br />Michel Piquemal - Lou Païs 2001 - Prix des Enfants de Troyes 2002</li>
-		<li><em>La Nuit des Courges Ensorcelées</em><br />Yves Blanckaert - Seuil 2001</li>
-		<li><em>Le Foulard Magique</em><br />Diane Barbara - Acte Sud Junior 2000</li>
-		<li><em>Les Perles de la Tigresse</em><br />Isabelle Gobert - Seuil 1999</li>
-		<li><em>La Petite Fille du Port de Chine</em><br />Agnès Bertron - Flammarion 1999</li>
-		<li><em>Un Petit Frère pour Tidino</em><br />Paule Brière - Flammarion 1999</li>
-		<li><em>Foming et le Trésor des 4 Mers</em><br />Lisa Bresner - Flammarion 1999</li>
-		<li><em>Mon Meilleur Ami est un Chameau</em><br />Flammarion 1998</li>
-		<li><em>Contes du Viêt-Nam</em><br />Flammarion 1998</li>
-		<li><em>La Brodeuse</em><br />Françoise Richard - Le Seuil 1995</li>
-		<li><em>Le Jeune Homme d'Or</em><br />Françoise Richard - Albin-Michel 1995</li>
-		<li><em>Les Trois Calumets</em><br />Patrick Bertrand - Le Seuil 1994 - Prix des libraires de Marseille</li>
-		<li><em>3 Messes pour Noël</em><br />Françoise Richard - Albin-Michel 1993</li>
-		<li><em>La Montagne Aux Chats</em><br />Françoise Richard - Albin Michel 1993 - Prix des libraires de New York</li>
-		<li><em>Des Histoires Pour...</em><br />Marie-Sophie Lelouch - Albin-Michel 1992</li>
+		{% for book in site.data.books %}
+			<li><em>{{ book.title }} </em><br />{{ book.author }} - {{ book.editor }} {{ book.date }}{% if book.price %} - {{ book.price }}{% endif %}</li>
+		{% endfor %}
 	</ul>
 </div>

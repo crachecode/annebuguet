@@ -33,6 +33,3 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-include:
-keep_files:
-  - vendor

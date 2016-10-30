@@ -1,4 +1,3 @@
-_site/*
-!_site/vendor
+_site
 .sass-cache
 .jekyll-metadata
