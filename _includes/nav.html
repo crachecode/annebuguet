@@ -1,0 +1,38 @@
+<div id="menu">
+	{% if page.id == 'home' %}
+		<span>
+			présentation
+		</span>
+	{% else %}
+		<a href="{{ site.baseurl }}/">
+			présentation
+		</a>
+	{% endif %}
+	{% if page.id == 'illustrations' %}
+		<span>
+			illustrations
+		</span>
+	{% else %}
+	<a href="{{ site.baseurl }}/illustrations/">
+		illustrations
+	</a>
+	{% endif %}
+	{% if page.id == 'bibliographie' %}
+		<span>
+			bibliographie
+		</span>
+	{% else %}
+	<a href="{{ site.baseurl }}/bibliographie/">
+		bibliographie
+	</a>
+	{% endif %}
+	{% if page.id == 'contact' %}
+		<span>
+			contact
+		</span>
+	{% else %}
+	<a href="{{ site.baseurl }}/contact/">
+		contact
+	</a>
+	{% endif %}
+</div>
