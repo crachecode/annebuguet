@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
-	/*** scene ***/
+	/*
+	// *** scene ***
 	
 	var renderer = new THREE.WebGLRenderer({antialias: true});
 	container = $('#chtulu');
@@ -14,7 +15,7 @@ $(document).ready(function () {
 
 	var scene = new THREE.Scene();
 
-	/*** camera ***/
+	// *** camera ***
 
 	ratio = width / height;
 	var camera = new THREE.PerspectiveCamera(35, width/height, 1, 10000);
@@ -27,7 +28,7 @@ $(document).ready(function () {
 		camera.position.z = 1580;
 	}
 
-	/*** materials ***/
+	// *** materials ***
 
 	var paperTexture = THREE.ImageUtils.loadTexture('/img/paper3.jpg', {}, function() {
 		runAnimation(0);
@@ -42,12 +43,12 @@ $(document).ready(function () {
 	var purple = new THREE.MeshLambertMaterial({map: paperTexture});
 	//paper.side = THREE.DoubleSide;
 
-	/*paper.wrapS = THREE.RepeatWrapping; 
-	paper.wrapT = THREE.RepeatWrapping;
-	paper.repeat.set(1,1);
-	var paperPlane = new THREE.MeshLambertMaterial({map: paper});*/
+	//paper.wrapS = THREE.RepeatWrapping;
+	//paper.wrapT = THREE.RepeatWrapping;
+	//paper.repeat.set(1,1);
+	//var paperPlane = new THREE.MeshLambertMaterial({map: paper});
 
-	/*** shapes ***/
+	// *** shapes ***
 	var gap = 1;
 	var geometry = new THREE.Geometry();
 	geometry.vertices.push(new THREE.Vector3(0,0,0));
@@ -91,8 +92,8 @@ $(document).ready(function () {
 	geometry2.computeFaceNormals();
 	triangle1 = new THREE.Mesh(geometry,purple);
 	triangle2 = new THREE.Mesh(geometry2,purple);
-	/*triangle3 = new THREE.Mesh(geometry,paper);
-	triangle4 = new THREE.Mesh(geometry2,paper);*/
+	//triangle3 = new THREE.Mesh(geometry,paper);
+	//triangle4 = new THREE.Mesh(geometry2,paper);
 	triangle1.rotation.x = 45*(Math.PI/180);
 	triangle2.rotation.x = 135*(Math.PI/180);
 	//triangle2.scale.x = -1;
@@ -134,7 +135,7 @@ $(document).ready(function () {
 	scene.add(plane);
 	plane.position.z = -20;
 
-	/*** lights ***/
+	// *** lights ***
 
 	scene.add(new THREE.AmbientLight(0xffffff));
 
@@ -208,6 +209,7 @@ $(document).ready(function () {
 	}
 	$(window).resize(function() {
 	});
+	*/
 
 });
 
