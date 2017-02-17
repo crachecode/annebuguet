@@ -9,7 +9,11 @@ id: bibliographie
 <div id="content" class="editorial">
 	<ul>
 		{% for book in site.data.books %}
-			<li><em>{{ book.title }} </em><br />{{ book.author }} - {{ book.editor }} {{ book.date }}{% if book.price %} - {{ book.price }}{% endif %}</li>
+			<li>
+				<em>{{ book.title }} </em>
+				<br />
+				{{ book.author }} - {{ book.editor }} {{ book.date }}{% if book.price %} - {{ book.price }}{% endif %}
+			</li>
 		{% endfor %}
 	</ul>
 </div>
