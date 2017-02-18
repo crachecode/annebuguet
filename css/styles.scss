@@ -2,6 +2,21 @@
 # Front matter for Jekyll
 ---
 
+@import url("https://fonts.googleapis.com/css?family=Voltaire");
+
+@font-face{
+	font-family:'Catamaran';
+	src:url('/fonts/catamaran400.woff2');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:'Catamaran';
+	src:url('/fonts/catamaran600.woff2');
+	font-weight:bold;
+	font-style:normal;
+}
+
 /**************** general ****************/
 
 $sand:#C09D8E;
@@ -21,6 +36,7 @@ $moyen:#646667;
 $over_bleu:#27aae4;
 $orange:#ff7422;
 $mouf:#dc8a5a;
+$plouf:#c58057;
 
 $text_high:$mouf;
 
@@ -29,7 +45,14 @@ $background_page:rgba($fonce,0.9);
 $text:#ddd;
 $titles:$clair;
 $text_menu_on:$text_high;
-$text_menu_off:$text_high;
+$text_menu_off:$plouf;
+
+$font_titles:Voltaire;
+$font_titles_weight:normal;
+$font_text:Catamaran;
+$font_text_size:16px;
+$font_menu:Catamaran;
+$font_menu_size:14px;
 
 ::selection {
 	color:$fonce;
@@ -40,13 +63,9 @@ $text_menu_off:$text_high;
 	background:$mouf;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Voltaire");
-//@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
-@import url('https://fonts.googleapis.com/css?family=Catamaran');
-
 * {
-	font-family:Catamaran, sans-serif;
-	font-size:16px;
+	font-family:$font_text, sans-serif;
+	font-size:$font_text_size;
 	text-align:left;
 	color:$text;
 	margin:0;
@@ -101,19 +120,21 @@ body > div {
 
 h1 {
 	color:$titles;
-	font-family:Voltaire, sans-serif;
-	font-size:26px;
+	font-family:$font_titles, sans-serif;
+	font-weight:$font_titles_weight;
+	font-size:30px;
 	margin:15px 0;
 }
 h2 {
 	color:$titles;
-	font-family:Voltaire, sans-serif;
-	font-size:20px;
+	font-family:$font_titles, sans-serif;
+	font-weight:$font_titles_weight;
+	font-size:24px;
 	margin-bottom:22px;
 }
 h3 {
 	color:$titles;
-	font-family:Catamaran, sans-serif;
+	font-family:$font_text, sans-serif;
 	font-size:14px;
 	margin-bottom:8px;
 }
@@ -163,7 +184,8 @@ em {
 
 .title {
 	color:$titles;
-	font-family:Voltaire, sans-serif;
+	font-family:$font_titles, sans-serif;
+	font-weight:$font_titles_weight;
 	font-size:32px;
 	margin:10px 0 20px 0;
 }
@@ -195,11 +217,11 @@ nav {
 	justify-content:space-between;
 	flex-wrap:nowrap;
 	div, a {
-		font-family:Catamaran, sans-serif;
-		font-size:14px;
+		font-family:$font_menu, sans-serif;
+		font-size:$font_menu_size;
 		font-weight:bold;
 		text-transform:uppercase;
-		letter-spacing:0.15em;
+		letter-spacing:0.13em;
 		height:18px;
 		line-height:18px;
 		padding:10px 16px 7px 16px;
