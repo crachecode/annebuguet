@@ -33,10 +33,9 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - sass
   - config.rb
   - vendor
-  - css
 keep_files:
   - vendor
-  - css
+sass:
+  style: nested
