@@ -72,13 +72,14 @@ $font_menu_size:14px;
 	padding:0;
 	border:0;
 }
-html, body {
-	text-align:center;
+html {
+	height:100%;
+	margin:0;
+	padding:0;
+	background:$background url(/img/tissu.jpg) no-repeat center center fixed;
+	background-size:cover;
 }
 body {
-	background-color:$background;
-	background:url(/img/tissu.jpg) no-repeat center fixed;
-	background-size:cover;
 }
 a, .link {
 	color:$mouf;
@@ -88,34 +89,13 @@ a, .link {
 a:hover, .link:hover {
 	color:#fff;
 }
-body > div {
+body > div { // page container
 	width:610px;
 	margin:40px auto;
 	text-align:left;
-	padding:15px;
+	padding:15px 30px;
 	background-color:$background_page;
 	margin-bottom:30px;
-}
-#pop {
-	margin:15px 20px 5px 20px;
-	text-align:left;
-}
-#chtulu {
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	z-index:1;
-	/*opacity:0.15;*/
-}
-#relative {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	min-height:100%;
-	z-index:2;
 }
 
 h1 {
