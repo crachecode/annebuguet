@@ -34,8 +34,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - config.rb
-  - vendor
-keep_files:
-  - vendor
+  - /vendor
+#keep_files:
 sass:
   style: nested
