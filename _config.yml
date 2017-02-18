@@ -38,3 +38,5 @@ exclude:
 #keep_files:
 sass:
   style: nested
+gems:
+  - jekyll-sitemap
