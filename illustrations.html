@@ -7,16 +7,16 @@ id: illustrations
 imgPath: /img/illustrations/
 ---
 
-<div id="content">
+<section>
 	{% for image in site.data.images %}
-		<a href="{{ page.imgPath }}full/{{ image.filename }}"
+		<a href="{{site.baseurl}}{{ page.imgPath }}full/{{ image.filename }}"
 		   class="picture"
 		   data-size="{{ image.size }}"
-		><img src="{{ page.imgPath }}thumb/{{ image.filename }}" width="122" height="122" /></a>
+		><img src="{{site.baseurl}}{{ page.imgPath }}thumb/{{ image.filename }}" width="122" height="122" /></a>
 	{% endfor %}
-</div>
+</section>
 
-<div class="foot">images soumises à copyright © Anne Buguet {{ 'now' | date: "%Y" }}</div>
+<footer>images soumises à copyright © Anne Buguet {{ 'now' | date: "%Y" }}</footer>
 
 
 

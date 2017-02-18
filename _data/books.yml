@@ -1,7 +1,41 @@
+- title: La Rose de Mantoue
+  author: Valère Staraselski
+  editor: album en recherche d'éditeur
+
+- title: Le Lorgnon
+  author: Delphine de Girardin
+  editor: Éditions de la Reine Blanche
+  date: 2017
+
+- title: Soupirs
+  author: Isabelle Taillandier
+  editor: Éditions de la Reine Blanche
+  date: 2017
+
+- title: Razina, la Sage Sultane
+  author: Nezha Chevé
+  editor: Editions Afrique Orient
+  date: 2016
+  price: Prix Grand Atlas
+  translation: traduit en arabe par Afrique Orient 2017
+
+- title: La Jeune Fille au Ruban
+  author: Valère Staraselski
+  editor: Seuil
+  date: 2015
+  translation: traduit en grec par Kokkiniklos 2016 et en espagnol par El Ateneo (Buenos Ayres) 2016
+
+- title: Les Trois Princesses
+  author: Anne Buguet
+  editor: Seuil
+  date: 2014
+  translation: traduit en espagnol par El Ateneo (Buenos Ayres) 2016
+
 - title: Petite Lune
   author: Claire Merleau-Ponty
   editor: Belin
   date: 2011
+  translation: traduit en coréen par Daekyo Co 2013
 
 - title: Dis c'est grand comment la Vie ?
   author: Joël Sadler
@@ -71,6 +105,7 @@
   author: Robert Giraud
   editor: Père Castor Flammarion
   date: 2005
+  translation: traduit en coréen par Xi Books 2013
 
 - title: Les Petits Vers
   author: Arnauld Pontier
@@ -81,6 +116,7 @@
   author: Anne Jonas
   editor: Milan
   date: 2004
+  translation: traduit en catalan et en espagnol par Parramon Barcelone 2005
 
 - title: La Belle au Bois Dormant
   author: Tahar Ben Jelloun
@@ -121,11 +157,13 @@
   author: André Voisin
   editor: Milan
   date: 2002
+  translation: traduit en coréen par Kyohakso 2006
 
 - title: Macha et l'Ours
   author: Robert Giraud
   editor: Père Castor Flammarion
   date: 2001
+  translation: traduit en coréen par Woongin (Séoul) 2004
 
 - title: Les Noces du Soleil
   author: Michel Piquemal
@@ -142,16 +180,19 @@
   author: Diane Barbara
   editor: Acte Sud Junior
   date: 2000
+  translation: traduit en Italien
 
 - title: Les Perles de la Tigresse
   author: Isabelle Gobert
   editor: Seuil
   date: 1999
+  translation: traduit en coréen par Daekyo Co  2004
 
 - title: La Petite Fille du Port de Chine
   author: Agnès Bertron
   editor: Flammarion
   date: 1999
+  translation: traduit en coréen par Sol publishing Co 2003
 
 - title: Un Petit Frère pour Tidino
   author: Paule Brière
@@ -197,6 +238,7 @@
   editor: Albin Michel
   date: 1993
   price: Prix des libraires de New York
+  translation: traduit en anglais par Putnam (New York) 1994
 
 - title: Des Histoires Pour...
   author: Marie-Sophie Lelouch

@@ -6,14 +6,15 @@ keywords: anne buguet, anne, buguet, illustratrice, illustration, contes, contes
 id: bibliographie
 ---
 
-<div id="content" class="editorial">
+<section>
 	<ul>
 		{% for book in site.data.books %}
 			<li>
 				<em>{{ book.title }} </em>
-				<br />
-				{{ book.author }} - {{ book.editor }} {{ book.date }}{% if book.price %} - {{ book.price }}{% endif %}
+				<br>
+				<b>{{ book.author }}</b> - {{ book.editor }} {{ book.date }}{% if book.price %} - {{ book.price }}{% endif %}
+				{% if book.translation %}<br><i>{{ book.translation }}</i>{% endif %}
 			</li>
 		{% endfor %}
 	</ul>
-</div>
+</section>
