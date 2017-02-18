@@ -6,13 +6,13 @@
 
 @font-face{
 	font-family:'Catamaran';
-	src:url('/fonts/catamaran400.woff2');
+	src:url('/fonts/catamaran400.woff');
 	font-weight:normal;
 	font-style:normal;
 }
 @font-face{
 	font-family:'Catamaran';
-	src:url('/fonts/catamaran600.woff2');
+	src:url('/fonts/catamaran600.woff');
 	font-weight:bold;
 	font-style:normal;
 }
@@ -137,7 +137,6 @@ ul {
 }
 main {
 	line-height:22px;
-	margin-top:30px;
 }
 em {
 	font-weight:bold;
@@ -196,6 +195,7 @@ nav {
 	display:flex;
 	justify-content:space-between;
 	flex-wrap:nowrap;
+	margin-bottom:30px;
 	div, a {
 		font-family:$font_menu, sans-serif;
 		font-size:$font_menu_size;
